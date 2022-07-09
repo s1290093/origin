@@ -1,10 +1,16 @@
 import java.util.Random;
+import java.util.Scanner;
 
 class headsOrTailsGame{
     public static void main(String[] args){
+	Scanner sc = new Scanner(System.in);
 	Random rand = new Random();
 
 	String name = null;
+	
+	System.out.println("Who are you?");
+	name = sc.next();
+	System.out.println("Hello, " + name + "!");
 
 	System.out.println("Tossing a coin...");
 
