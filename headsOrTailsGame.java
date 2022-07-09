@@ -4,6 +4,8 @@ class headsOrTailsGame{
     public static void main(String[] args){
 	Random rand = new Random();
 
+	String name = null;
+
 	System.out.println("Tossing a coin...");
 
 	int headsCount = 0, tailsCount = 0;
@@ -23,5 +25,22 @@ class headsOrTailsGame{
 	}
 
 	System.out.println("Heads: " + headsCount + ", Tails: " + tailsCount);
+
+	if(headsCount > tailsCount){
+	    if(name != null){
+		System.out.print(name);
+	    }else{
+		System.out.print("You");
+	    }
+	    System.out.println(" won");
+	}
+	else{
+	    if(name != null){
+		System.out.print(name);
+	    }else{
+		System.out.print("You");
+	    }
+	    System.out.println(" lost");
+	}
     }
 }
